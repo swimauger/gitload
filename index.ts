@@ -1,4 +1,4 @@
-import { GitStore } from './lib/GitStore';
+import { GitLoad } from './lib/GitLoad';
 import { version } from './package.json';
 
-export { GitStore, version };
+export { GitLoad, version };

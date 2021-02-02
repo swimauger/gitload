@@ -1,15 +1,15 @@
 import { Octokit } from '@octokit/core';
 import { GitDatabase } from './GitDatabase';
 
-export interface GitStoreOptions {
+export interface GitLoadOptions {
     owner: string,
     repo: string,
     private?: boolean,
     token: string
 }
 
-export class GitStore {
-    static async initDatabase(options: GitStoreOptions) {
+export class GitLoad {
+    static async initDatabase(options: GitLoadOptions) {
         const octokit = new Octokit({ auth: options.token });
 
         try {
@@ -30,7 +30,7 @@ export class GitStore {
         });
     }
 
-    static async deleteDatabase(options: GitStoreOptions) {
+    static async deleteDatabase(options: GitLoadOptions) {
         const octokit = new Octokit({ auth: options.token });
 
         try {
