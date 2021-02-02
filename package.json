@@ -1,0 +1,13 @@
+{
+  "name": "gitstore",
+  "author": "Mark Auger",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "dev": "tsc index.ts --watch",
+    "clean": "rm -rf *.js lib/*.js"
+  },
+  "dependencies": {
+    "@octokit/core": "^3.2.5"
+  }
+}
