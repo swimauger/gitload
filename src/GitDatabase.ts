@@ -11,9 +11,9 @@ export class GitDatabase {
     private settings: GitDatabaseOptions;
     private master: GitBranch;
 
-    public get;
-    public set;
-    public delete;
+    public get: typeof GitBranch.prototype.get;
+    public set: typeof GitBranch.prototype.set;
+    public delete: typeof GitBranch.prototype.delete;
 
     constructor(options: GitDatabaseOptions) {
         this.settings = options;

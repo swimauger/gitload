@@ -1,7 +1,7 @@
 import { GitDatabaseOptions } from "./GitDatabase";
 
 export interface GitBranchOptions extends GitDatabaseOptions {
-    branch: string
+    branch: string | undefined
 }
 
 export class GitBranch {
